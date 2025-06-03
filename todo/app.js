@@ -2,6 +2,7 @@
 let ctr = 1
 function addTodo() {
     const val = document.querySelector("input").value
+    document.querySelector("input").value= ''
     const newVal = document.createElement("ol")
     newVal.setAttribute("id", ctr)
     newVal.innerHTML = `<span> ${val} </span>
